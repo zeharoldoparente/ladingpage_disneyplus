@@ -2,6 +2,7 @@
 @use "hero";
 @use "shows";
 @use "plans";
+@use "watch-anywhere";
 
 @font-face {
    font-family: Avenir;
@@ -56,15 +57,15 @@ body {
 }
 
 .title--big {
-   @include text(48px);
+   @include title(48px);
 }
 
 .title {
-   @include text;
+   @include title;
 }
 
 .title--small {
-   @include text(28px);
+   @include title(28px);
 }
 
 .button {
