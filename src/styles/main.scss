@@ -4,6 +4,7 @@
 @use "plans";
 @use "avaliable-devices";
 @use "faq";
+@use "header";
 @use "footer";
 
 @font-face {
@@ -26,7 +27,7 @@
 }
 
 body {
-   background-color: variaveis.$corDeFundo;
+   background-color: variaveis.$corParaOFundo;
 }
 
 @mixin text($fontSize: 16px) {
@@ -70,6 +71,10 @@ body {
    @include title(28px);
 }
 
+li {
+   list-style: none;
+}
+
 .button {
    display: block;
    width: 100%;
@@ -79,9 +84,16 @@ body {
    background-color: #6421ff;
    text-transform: uppercase;
    border-radius: 4px;
-   margin-top: 2vw;
-   margin-bottom: 8px;
    cursor: pointer;
+   text-decoration: none;
+   padding: 8px 14px;
+   letter-spacing: 1px;
+
+   &--secondary {
+   }
+
+   &--dark {
+   }
 }
 
 .image-text-section {
